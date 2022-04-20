@@ -10,3 +10,4 @@ do{
     console.log(y);
     y=y+5;
 }while(y<51);
+
