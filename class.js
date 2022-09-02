@@ -8,7 +8,7 @@ class Car{
 
 }
 
-mycar = new Car("Buggati");
-mycar.present();
+Car = new Car("Buggati");
+Car.present();
 
-console.log(mycar.present());
+console.log(Car.present());
