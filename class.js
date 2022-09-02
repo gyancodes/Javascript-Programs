@@ -8,7 +8,11 @@ class Car{
 
 }
 
-Car = new Car("Buggati");
-Car.present();
+// Car = new Car("Buggati");
+// Car.present();
 
-console.log(Car.present());
+let myCar = new Car("Bugatti");
+myCar.present();
+
+// console.log(myCar.present());
+// alert(Car.present());
