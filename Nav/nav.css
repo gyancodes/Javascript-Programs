@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.5rem;
+}
+
+
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+
+
+}
+
+.logo {
+    display: flex;
+
+}
+
+.right-nav {
+    display: flex;
+}
+
+.hide {
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+    .nav_hide {
+        display:block;
+        position: absolute;
+       
+   
+    
+
+
+      
+        gap: 1rem;
+        background-color: burlywood;
+
+    }
+
+    .right-nav {
+        display: none;
+    }
+
+
+}
