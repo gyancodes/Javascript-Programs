@@ -6,7 +6,10 @@ const numberToWords = function(num) {
       result = num % 1000 !== 0 ? [toHundreds(num % 1000), bigNumbers[i], result].filter(Boolean).join(" ") : result;
     }
     return result.length === 0 ? "Zero" : result;
-  }
+      }
+          
+
+
   function toHundreds(num) {
     const numbers = ["", "One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine", "Ten",
       "Eleven", "Twelve", "Thirteen", "Fourteen", "Fifteen", "Sixteen", "Seventeen", "Eighteen", "Nineteen"];
@@ -21,4 +24,3 @@ const numberToWords = function(num) {
   toHundreds(123);
   console.log(toHundreds(800))
 
-  
