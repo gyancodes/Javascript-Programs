@@ -3,23 +3,36 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./index.css" />
     <title>React</title>
   </head>
   <body>
+    
     <div id="root"></div>
-    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
-    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+    ></script>
     <script src="./App.js"></script>
     <!-- <script>
       // const rootElement = document.getElementById("root");
       // const element = React.createElement("h1", null, "Hello World");
       // ReactDOM.render(element, rootElement);
 
-
       const heading = React.createElement("h1", {}, "Hello World");
+
+      const para = React.createElement(
+        "p",
+        {},
+        "This is a paragraph using React Js --"
+      );
+
       const root = ReactDOM.createRoot(document.getElementById("root"));
-      root.render(heading);
+      root.render(para);
     </script> -->
   </body>
 </html>
