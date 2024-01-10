@@ -7,7 +7,7 @@
 // }
 
 //@ts-check
-/**@param {any[]} */
+
 
 function compact(arr){
     if(orr.length > 10)
