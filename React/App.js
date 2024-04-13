@@ -1,89 +1,37 @@
+/**
+ <div id="parent">
+        <div id="child">
+          <h1>I'm h1 tag</h1>
+          <h2>I'm h2 tag</h2>
+        </div>
+        <div id="child2">
+          <h1>I'm h1 tag</h1>
+          <h2>I'm h2 tag</h2>  
+        </div>
+      </div>
+ */
 
+const parent = React.createElement(
+  "div",
+  { id: "parent" },
+  React.createElement("div", { id: "child" }, [
+    React.createElement("h1", { class: "h1tag" }, "I'm h1 tag"),
+    React.createElement("h2", {}, "I'm h2 tag"),
+  ]),
+  React.createElement("div", { id: "child2" }, [
+    React.createElement("h1", {}, "I'm h1 tag"),
+    React.createElement("h2", {}, "I'm h2 tag"),
+  ])
+);
 
+// const heading = React.createElement(
+//   "h1",
+//   { id: "heading" },
+//   "Hello World from React!"
+// );
 
+// console.log(heading);
 
+const root = ReactDOM.createRoot(document.getElementById("root"));
 
-
-
-
-
-
-
-
-
-
-
-
-
-// // Web RTC Implementation
-// function initializeWebRTC() {
-//   // Create peer connection
-//   const peerConnection = new RTCPeerConnection();
-
-//   // Handle ICE candidates
-//   peerConnection.onicecandidate = event => {
-//     if (event.candidate) {
-//       console.log("New ICE candidate:", event.candidate);
-//     }
-//   };
-
-//   // Create offer
-//   peerConnection.createOffer()
-//     .then(offer => peerConnection.setLocalDescription(offer))
-//     .then(() => {
-//       // Send the offer to the remote peer through your signaling server
-//       console.log("Offer created and set as local description:", peerConnection.localDescription);
-//     })
-//     .catch(error => console.error("Error creating offer:", error));
-
-//   // Listen for remote session description
-//   peerConnection.ontrack = event => {
-//     console.log("Remote track received:", event.streams[0]);
-
-
-
-//     // Attach the received media stream to an element in your DOM
-//   };
-//   // Add media track to connection
-//   navigator.mediaDevices.getUserMedia({ audio: true });
-
-
-
-// Web RTC Implementation
-
-// function initializeWebRTC() {
-//   // Create peer connection
-//   const peerConnection = new RTCPeerConnection();
-
-//   // Handle ICE candidates
-//   peerConnection.onicecandidate = event => {
-//     if (event.candidate) {
-//       console.log("New ICE candidate:", event.candidate);
-//     }
-//   };
-
-//   // Create offer
-//   peerConnection.createOffer()
-//     .then(offer => peerConnection.setLocalDescription(offer))
-//     .then(() => {
-//       // Send the offer to the remote peer through your signaling server
-//       console.log("Offer created and set as local description:", peerConnection.localDescription);
-//     })
-//     .catch(error => console.error("Error creating offer:", error));
-
-//   // Listen for remote session description
-//   peerConnection.ontrack = event => {
-//     console.log("Remote track received:", event.streams[0]);
-//     // Attach the received media stream to an element in your DOM
-//   };
-
-//   // Add media track to connection
-//   navigator.mediaDevices.getUserMedia({ audio: true, video: true })
-//     .then(stream => {
-//       stream.getTracks().forEach(track => peerConnection.addTrack(track, stream));
-//     })
-//     .catch(error => console.error("Error accessing media devices:", error));
-// }
-
-// // Call the function to initialize WebRTC
-// initializeWebRTC();
+root.render(parent);
