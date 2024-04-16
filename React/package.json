@@ -1,0 +1,25 @@
+{
+  "name": "react",
+  "version": "1.0.0",
+  "description": "This is React learning repo from basic",
+  "main": "App.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gyancodes/Javascript-Programs.git#master"
+  },
+  "keywords": [
+    "react"
+  ],
+  "author": "Gyan Prakash",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gyancodes/Javascript-Programs/issues"
+  },
+  "homepage": "https://github.com/gyancodes/Javascript-Programs/tree/master#readme",
+  "devDependencies": {
+    "parcel": "^2.12.0"
+  }
+}
