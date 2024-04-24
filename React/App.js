@@ -5,34 +5,22 @@ import ReactDOM from "react-dom/client";
 
 
 
+/** 
+React.createElement => ReactElement-JS Object => HTMLElement(render)
+
+const heading = React.createElement(
+    "h1",
+    {id: "heading"},
+    "Hello World"
+)
+
+*/
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// JSX (transpiled before it reaches the JS) - using PARCEL - Babel
+// JSX => React.createElement
+// JSX is not a pure javascript of HTML in JS, of HTML in XML, It's a syntax
+const jsxHeading = <h1 id="heading">Hello World</h1>
 
 
 // /**
