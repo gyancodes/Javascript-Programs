@@ -1,11 +1,11 @@
-class Car{
-    constructor(name)
-    {this.brand = name}
+class Car {
+  constructor(name) {
+    this.brand = name;
+  }
 
-    present(){
-        return 'I have a ' + this.brand;
-    }
-
+  present() {
+    return "I have a " + this.brand;
+  }
 }
 
 // Car = new Car("Buggati");
