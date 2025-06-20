@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Counter</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="hero-container">
+      <h1>Javascript Counter</h1>
+      <div id="counter-display">0</div>
+
+      <div class="calc-btn">
+        <button id="increment-btn" >increment</button>
+        <button id="decrement-btn" >decrement</button>
+      </div>
+    </div>
+
+    <script>
+      var count = 0;
+
+      const counterDisplay = document.getElementById("counter-display");
+      const incrementBtn = document.getElementById("increment-btn");
+      const decrementBtn = document.getElementById("decrement-btn");
+
+      function updateCounterDisplay() {
+        counterDisplay.textContent = count;
+      }
+
+      function handleIncrement() {
+        count++;
+        updateCounterDisplay();
+      }
+
+      function handleDecrement() {
+        count--;
+        updateCounterDisplay();
+      }
+
+      document.addEventListener('DOMContentLoaded', () => {
+        incrementBtn.addEventListener('click', handleIncrement);
+        decrementBtn.addEventListener('click', handleDecrement);
+        updateCounterDisplay();
+      });
+    </script>
+  </body>
+</html>
+
+<!-- This code sets up event listeners after the HTML document has fully loaded. Here’s a breakdown:
+
+document.addEventListener('DOMContentLoaded', ...): Waits until the HTML is completely loaded and parsed before running the function inside. This ensures that all elements are available in the DOM.
+
+Inside the callback function:
+
+incrementBtn.addEventListener('click', handleIncrement);: Attaches a click event listener to the incrementBtn element. When clicked, it calls the handleIncrement function.
+decrementBtn.addEventListener('click', handleDecrement);: Similarly, attaches a click event listener to the decrementBtn element, calling handleDecrement on click.
+updateCounterDisplay();: Calls a function to update the counter display, likely to show the initial value. -->
